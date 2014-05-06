@@ -15,7 +15,7 @@ data$Date <- strptime(paste(data$Date,data$Time),"%d/%m/%Y %H:%M:%S")
 data$Time <- NULL
 
 #Create and Save Plot
-png(file="plot3.png")
+png(file="plot4.png")
 par(mfrow=c(2,2))
 plot(data$Date,data$Global_active_power,type="l",ylab="Global Active Power",xlab="",cex.lab=.6,cex.axis=0.6)
 plot(data$Date,data$Voltage,type="l",ylab="Voltage",xlab="datetime",cex.lab=.6,cex.axis=0.6)
